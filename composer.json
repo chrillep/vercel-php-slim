@@ -1,4 +1,6 @@
 {
+  "name": "chrillep/vercel-php-slim",
+  "description": "A PHP Slim application for Vercel",
   "require": {
     "php": "^8.2",
     "slim/slim": "^4.11",
