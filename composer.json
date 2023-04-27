@@ -1,8 +1,8 @@
 {
   "require": {
-    "php": "^8.2",
-    "slim/slim": "^4.11",
-    "slim/psr7": "^1.6"
+    "php": "8.2.5",
+    "slim/slim": "4.11.0",
+    "slim/psr7": "1.6.1"
   },
   "scripts": {
     "dev": "php -S localhost:8080 -t api api/index.php"
