@@ -45,6 +45,12 @@ $app->get('/hello/', function (Request $request, Response $response, array $args
     return $response;
 });
 
+$app->get('/me', function (Request $request, Response $response, array $args) {
+    $meJson = file_get_contents(__DIR__ . '/me.json');
+    $response->getBody()->write($meJson);
+    return $response->withHeader('Content-Type', 'application/json');
+});
+
 $app->get('/', function (Request $request, Response $response, array $args) {
     $response->getBody()->write('Index!');
     return $response;
