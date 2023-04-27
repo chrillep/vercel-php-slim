@@ -51,6 +51,10 @@ $app->get('/me', function (Request $request, Response $response, array $args) {
     return $response->withHeader('Content-Type', 'application/json');
 });
 
+$app->get('/php', function (Request $request, Response $response, array $args) {
+    return phpinfo();
+});
+
 $app->get('/', function (Request $request, Response $response, array $args) {
     $response->getBody()->write('Index!');
     return $response;
